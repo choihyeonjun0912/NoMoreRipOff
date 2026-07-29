@@ -154,29 +154,29 @@ network failures; timeout at 15–20 s with a retry prompt.
 ### Phase 0 — Environment Setup
 - [x] Create GitHub repository
 - [x] Commit `AGENTS.md` and subagent definitions at the repo root
-- [ ] Initialize Next.js project (TypeScript, App Router, Tailwind)
-- [ ] Create `.env.local.example` (format only, no real key)
-- [ ] Confirm `.gitignore` includes `.env*`
-- [ ] Draft README.md (project intro, local run instructions)
+- [x] Initialize Next.js project (TypeScript, App Router, Tailwind)
+- [x] Create `.env.local.example` (format only, no real key)
+- [x] Confirm `.gitignore` includes `.env*`
+- [x] Draft README.md (project intro, local run instructions)
 
 ### Phase 1 — Checklist Verification (do this before prompt work)
 - [ ] Review the 고용노동부 standard contract template
 - [ ] Cross-check relevant 근로기준법 provisions
-- [ ] Finalize checklist wording in `data/checklist.json`
-- [ ] Put annually-updated figures in `data/constants.json`
+- [x] Finalize checklist wording in `data/checklist.json`
+- [x] Put annually-updated figures in `data/constants.json`
 
 ### Phase 2 — Backend API Route
 - [ ] Issue an Anthropic API key; register as env var (never commit)
-- [ ] Create `/api/analyze` (Anthropic call, JSON response)
-- [ ] Test text-only first, then add base64 image → vision handling
+- [x] Create `/api/analyze` (Anthropic call, JSON response)
+- [ ] Test text-only first, then add base64 image → vision handling (vision handling implemented; live test pending API key)
 - [ ] Test standalone with curl
-- [ ] Add basic rate limiting to the endpoint
+- [x] Add basic rate limiting to the endpoint
 
 ### Phase 3 — Frontend
-- [ ] Camera capture UI + Canvas compression (1568 px / JPEG 0.85)
-- [ ] Wire submit button to `/api/analyze`
-- [ ] Loading, error (per §6), and results screens
-- [ ] Persistent disclaimer text
+- [x] Camera capture UI + Canvas compression (1568 px / JPEG 0.85)
+- [x] Wire submit button to `/api/analyze`
+- [x] Loading, error (per §6), and results screens
+- [x] Persistent disclaimer text
 
 ### Phase 4 — Deployment & Testing
 - [ ] Deploy to Vercel; validate against 5–10 synthetic contracts
